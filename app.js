@@ -8,17 +8,12 @@ const { interpretarMensaje } = require('./gemini');
 const { getOrderStatus } = require('./prestashop'); 
 require('dotenv').config();
 
-//const MYSQL_DB_HOST = process.env.MYSQL_DB_HOST;
-//const MYSQL_DB_USER = process.env.MYSQL_DB_USER;
-//const MYSQL_DB_PASSWORD = process.env.MYSQL_DB_PASSWORD;
-//const MYSQL_DB_NAME = process.env.MYSQL_DB_NAME;
-//const MYSQL_DB_PORT = process.env.MYSQL_DB_PORT || '3306';
+const MYSQL_DB_HOST = process.env.MYSQL_DB_HOST;
+const MYSQL_DB_USER = process.env.MYSQL_DB_USER;
+const MYSQL_DB_PASSWORD = process.env.MYSQL_DB_PASSWORD;
+const MYSQL_DB_NAME = process.env.MYSQL_DB_NAME;
+const MYSQL_DB_PORT = process.env.MYSQL_DB_PORT || '3306';
 
-const MYSQL_DB_HOST = 'localhost';
-const MYSQL_DB_USER = 'Miller';
-const MYSQL_DB_PASSWORD = 'Miller2001*';
-const MYSQL_DB_NAME = 'bot';
-const MYSQL_DB_PORT = '3306';
 
 const NumVendor = process.env.NUM_VENDOR;
 let nombreGlobal = '';
